@@ -10,12 +10,15 @@ import java.io.IOException;
 public class Program {
     public static void main(String[] args) throws IOException {
         ReadFile rf = new ReadFile();
-//        rf.readTxtFile();
+
         CountWords countWords = new CountWords();
         countWords.countAllWords(rf);
 
         LongestWord longestWord = new LongestWord();
         longestWord.findLongestWord(rf);
+
+        CalculateWords calculateWords = new CalculateWords();
+        System.out.println(calculateWords.calculateWordsFrequency(rf));
     }
 
 
