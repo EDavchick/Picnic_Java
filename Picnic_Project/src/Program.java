@@ -1,14 +1,10 @@
 import java.io.IOException;
 
-/** Задание 2
- * Ваш файл `input.txt` содержит множество слов, разделенных пробелами.
- * Это слова-фрукты, овощи и другие продукты.
+/** Ваш файл `input.txt` содержит множество слов, разделенных пробелами. Это слова-фрукты, овощи и другие продукты.
  * Задания:
- * 1. public static void countAllWords - подсчет всех слов
- * 2. public static void findLongestWord - самое длинное слово
- * 3. Вычислить частоту слов: Calculate word frequency
- * Напишите программу, которая анализирует, сколько раз каждое слово встречается в файле.
- * Подумайте об этом как о подсчете того, какие фрукты и овощи самые популярные на вашем пикнике!
+ * 1. protected void void countAllWords - подсчет всех слов
+ * 2. protected void void findLongestWord - самое длинное слово
+ * 3. protected void calculateWordsFrequency(ReadFile file)
  */
 
 public class Program {
@@ -17,6 +13,9 @@ public class Program {
 //        rf.readTxtFile();
         CountWords countWords = new CountWords();
         countWords.countAllWords(rf);
+
+        LongestWord longestWord = new LongestWord();
+        longestWord.findLongestWord(rf);
     }
 
 

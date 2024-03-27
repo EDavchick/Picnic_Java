@@ -7,7 +7,7 @@ import java.util.HashMap;
  */
 
 public class CountWords extends ReadFile {
-    public static void countAllWords(ReadFile file) throws IOException {
+    protected void countAllWords(ReadFile file) throws IOException {
         HashMap<Integer, String> hashMap = file.readTxtFile();
         System.out.println("Number of words: " + hashMap.size());
     }
